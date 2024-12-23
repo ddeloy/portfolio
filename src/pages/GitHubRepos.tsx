@@ -12,7 +12,7 @@ const GitHubRepos = () => {
     const [loading, setLoading] = useState(true);
 
     // List of repositories to fetch
-    const repoNames = useMemo(() => ['d-trade'], []); // Adjust repo names as needed
+    const repoNames = useMemo(() => ['d-trade', 'portfolio'], []); // Adjust repo names as needed
 
     useEffect(() => {
         const fetchRepoByName = async (repoName: string): Promise<Repo | null> => {
