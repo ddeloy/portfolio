@@ -8,7 +8,9 @@ const Navbar = () => {
 
     const articles = [
         { title: 'Agile Estimating', path: '/agile-estimating' },
-        { title: 'Other Article', path: '/other-article' },
+        { title: 'Ways of Working', path: '/wow' },
+        { title: 'Agile Ceremonies', path: '/agile-ceremonies' },
+        { title: 'User Stories', path: '/user-stories' },
     ];
 
     return (
@@ -45,7 +47,7 @@ const Navbar = () => {
                             fontWeight: isDropdownOpen ? 'bold' : 'normal',
                         }}
                     >
-                        Articles ▼
+                        Agile Articles ▼
                     </button>
                     {isDropdownOpen && (
                         <div

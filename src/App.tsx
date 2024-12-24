@@ -7,6 +7,9 @@ import Footer from './components/Footer';
 import Blog from "./pages/Blog.tsx";
 import GitHubRepos from "./pages/GitHubRepos";
 import AgileEstimating from "./components/AgileEstimating.tsx";
+import WaysOfWorking from "./components/WaysOfWorking.tsx";
+import AgileCeremonies from "./components/AgileCeremonies.tsx";
+import UserStories from "./components/UserStories.tsx";
 
 function App() {
     return (
@@ -19,6 +22,9 @@ function App() {
                         <Route path="/projects" element={<Projects />} />
                         <Route path="/blog" element={<Blog />} />
                         <Route path="/agile-estimating" element={<AgileEstimating />} />
+                        <Route path="/wow" element={<WaysOfWorking />} />
+                        <Route path="/agile-ceremonies" element={<AgileCeremonies />} />
+                        <Route path="/user-stories" element={<UserStories />} />
                         <Route path="/github" element={<GitHubRepos />} />
                         <Route path="/contact" element={<Contact />} />
                     </Routes>

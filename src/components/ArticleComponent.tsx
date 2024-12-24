@@ -4,7 +4,9 @@ const ArticleDropdown: React.FC = () => {
     const navigate = useNavigate();
     const articles = [
         { title: 'Agile Estimating', path: '/agile-estimating' },
-        { title: 'Other Article', path: '/other-article' },
+        { title: 'Ways of Working', path: '/wow' },
+        { title: 'Agile Ceremonies', path: '/agile-ceremonies' },
+        { title: 'User Stories', path: '/user-stories' },
     ];
 
     const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
