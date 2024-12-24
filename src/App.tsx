@@ -6,10 +6,10 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Blog from "./pages/Blog.tsx";
 import GitHubRepos from "./pages/GitHubRepos";
-import AgileEstimating from "./components/AgileEstimating.tsx";
-import WaysOfWorking from "./components/WaysOfWorking.tsx";
-import AgileCeremonies from "./components/AgileCeremonies.tsx";
-import UserStories from "./components/UserStories.tsx";
+import AgileEstimating from "./components/Articles/AgileEstimating.tsx";
+import WaysOfWorking from "./components/Articles/WaysOfWorking.tsx";
+import AgileCeremonies from "./components/Articles/AgileCeremonies.tsx";
+import UserStories from "./components/Articles/UserStories.tsx";
 
 function App() {
     return (
