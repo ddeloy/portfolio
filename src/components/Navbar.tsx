@@ -1,65 +1,105 @@
 import { NavLink } from 'react-router-dom';
+import { useState } from 'react';
 
-const Navbar = () => (
-    <nav style={{ display: 'flex', justifyContent: 'space-between', padding: '1rem' }}>
-        <div>MyPortfolio</div>
-        <div>
-            <NavLink
-                to="/"
-                style={({ isActive }) => ({
-                    margin: '0 1rem',
-                    fontWeight: isActive ? 'bold' : 'normal',
-                })}
-            >
-                Home
-            </NavLink>
-            <NavLink
-                to="/projects"
-                style={({ isActive }) => ({
-                    margin: '0 1rem',
-                    fontWeight: isActive ? 'bold' : 'normal',
-                })}
-            >
-                Projects
-            </NavLink>
-            <NavLink
-                to="/blog"
-                style={({ isActive }) => ({
-                    margin: '0 1rem',
-                    fontWeight: isActive ? 'bold' : 'normal',
-                })}
-            >
-                Blog
-            </NavLink>
-            <NavLink
-                to="/agile-estimating"
-                style={({ isActive }) => ({
-                    margin: '0 1rem',
-                    fontWeight: isActive ? 'bold' : 'normal',
-                })}
-            >
-                Agile Estimating
-            </NavLink>
-            <NavLink
-                to="/github"
-                style={({ isActive }) => ({
-                    margin: '0 1rem',
-                    fontWeight: isActive ? 'bold' : 'normal',
-                })}
-            >
-                GitHub
-            </NavLink>
-            <NavLink
-                to="/contact"
-                style={({ isActive }) => ({
-                    margin: '0 1rem',
-                    fontWeight: isActive ? 'bold' : 'normal',
-                })}
-            >
-                Contact
-            </NavLink>
-        </div>
-    </nav>
-);
+const Navbar = () => {
+    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+    const toggleDropdown = () => setIsDropdownOpen((prev) => !prev);
+
+    const articles = [
+        { title: 'Agile Estimating', path: '/agile-estimating' },
+        { title: 'Other Article', path: '/other-article' },
+    ];
+
+    return (
+        <nav style={{ display: 'flex', justifyContent: 'space-between', padding: '1rem' }}>
+            <div>MyPortfolio</div>
+            <div style={{ display: 'flex', alignItems: 'center' }}>
+                <NavLink
+                    to="/"
+                    style={({ isActive }) => ({
+                        margin: '0 1rem',
+                        fontWeight: isActive ? 'bold' : 'normal',
+                    })}
+                >
+                    Home
+                </NavLink>
+                <NavLink
+                    to="/projects"
+                    style={({ isActive }) => ({
+                        margin: '0 1rem',
+                        fontWeight: isActive ? 'bold' : 'normal',
+                    })}
+                >
+                    Projects
+                </NavLink>
+
+                {/* Blog with Dropdown */}
+                <div style={{ position: 'relative', margin: '0 1rem' }}>
+                    <button
+                        onClick={toggleDropdown}
+                        style={{
+                            background: 'none',
+                            border: 'none',
+                            cursor: 'pointer',
+                            fontWeight: isDropdownOpen ? 'bold' : 'normal',
+                        }}
+                    >
+                        Articles ▼
+                    </button>
+                    {isDropdownOpen && (
+                        <div
+                            style={{
+                                position: 'absolute',
+                                top: '100%',
+                                left: 0,
+                                backgroundColor: '#fff',
+                                border: '1px solid #ccc',
+                                boxShadow: '0px 4px 6px rgba(0,0,0,0.1)',
+                                zIndex: 1000,
+                                padding: '0.5rem',
+                            }}
+                        >
+                            {articles.map((article) => (
+                                <NavLink
+                                    key={article.path}
+                                    to={article.path}
+                                    style={{
+                                        display: 'block',
+                                        padding: '0.5rem 1rem',
+                                        textDecoration: 'none',
+                                        color: '#000',
+                                    }}
+                                    onClick={() => setIsDropdownOpen(false)} // Close dropdown on link click
+                                >
+                                    {article.title}
+                                </NavLink>
+                            ))}
+                        </div>
+                    )}
+                </div>
+
+                <NavLink
+                    to="/github"
+                    style={({ isActive }) => ({
+                        margin: '0 1rem',
+                        fontWeight: isActive ? 'bold' : 'normal',
+                    })}
+                >
+                    GitHub
+                </NavLink>
+                <NavLink
+                    to="/contact"
+                    style={({ isActive }) => ({
+                        margin: '0 1rem',
+                        fontWeight: isActive ? 'bold' : 'normal',
+                    })}
+                >
+                    Contact
+                </NavLink>
+            </div>
+        </nav>
+    );
+};
 
 export default Navbar;
