@@ -6,6 +6,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Blog from "./pages/Blog.tsx";
 import GitHubRepos from "./pages/GitHubRepos";
+import AgileEstimating from "./components/AgileEstimating.tsx";
 
 function App() {
     return (
@@ -17,6 +18,7 @@ function App() {
                         <Route path="/" element={<Home />} />
                         <Route path="/projects" element={<Projects />} />
                         <Route path="/blog" element={<Blog />} />
+                        <Route path="/agile-estimating" element={<AgileEstimating />} />
                         <Route path="/github" element={<GitHubRepos />} />
                         <Route path="/contact" element={<Contact />} />
                     </Routes>
