@@ -15,7 +15,7 @@ const Navbar = () => {
 
     return (
         <nav style={{ display: 'flex', justifyContent: 'space-between', padding: '1rem' }}>
-            <div>MyPortfolio</div>
+            <div>Doug DeLoy - Portfolio of Work</div>
             <div style={{ display: 'flex', alignItems: 'center' }}>
                 <NavLink
                     to="/"
@@ -98,6 +98,15 @@ const Navbar = () => {
                     })}
                 >
                     Job Search
+                </NavLink>
+                <NavLink
+                    to="/about"
+                    style={({ isActive }) => ({
+                        margin: '0 1rem',
+                        fontWeight: isActive ? 'bold' : 'normal',
+                    })}
+                >
+                    About
                 </NavLink>
             </div>
         </nav>

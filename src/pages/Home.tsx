@@ -1,11 +1,11 @@
 const Home = () => {
     return (
         <div className="bg-gray-100 text-center p-4">
-            <h1 className="text-4xl font-bold mb-4 text-blue-600">
+            <h1 className="text-2xl font-bold mb-4 text-blue-600">
                 Welcome to My Portfolio
             </h1>
             <p className="text-lg text-gray-700">
-                I'm a software engineer specializing in building amazing web applications.
+                Visit the About page for a detailed description of this REACT project and its key features.
             </p>
 
             <div className="mt-8 text-left mx-auto max-w-3xl">

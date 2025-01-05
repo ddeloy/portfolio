@@ -10,6 +10,7 @@ import WaysOfWorking from "./components/Articles/WaysOfWorking.tsx";
 import AgileCeremonies from "./components/Articles/AgileCeremonies.tsx";
 import UserStories from "./components/Articles/UserStories.tsx";
 import JobSearchPage from "./pages/JobSearchPage.tsx";
+import About from "./pages/About.tsx";
 
 function App() {
     return (
@@ -27,6 +28,7 @@ function App() {
                         <Route path="/user-stories" element={<UserStories />} />
                         <Route path="/github" element={<GitHubRepos />} />
                         <Route path="/jobs" element={<JobSearchPage />} />
+                        <Route path="/about" element={<About />} />
                     </Routes>
                 </main>
                 <Footer />

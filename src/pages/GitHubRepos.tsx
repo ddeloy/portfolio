@@ -55,8 +55,8 @@ const GitHubRepos = () => {
     }
 
     return (
-        <div className="p-4">
-            <h1 className="text-3xl font-bold mb-4">My Selected GitHub Repositories</h1>
+        <div className="p-4 space-x-2">
+            <h1 className="text-2xl font-bold mb-3">Fetching a few of my most current GitHub Repos</h1>
             <ul className="list-disc space-y-2">
                 {repos.map((repo) => (
                     <li key={repo.id}>
