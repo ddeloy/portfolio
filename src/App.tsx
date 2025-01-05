@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
-import Contact from './pages/Contact';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Blog from "./pages/Blog.tsx";
@@ -10,6 +9,7 @@ import AgileEstimating from "./components/Articles/AgileEstimating.tsx";
 import WaysOfWorking from "./components/Articles/WaysOfWorking.tsx";
 import AgileCeremonies from "./components/Articles/AgileCeremonies.tsx";
 import UserStories from "./components/Articles/UserStories.tsx";
+import JobSearchPage from "./pages/JobSearchPage.tsx";
 
 function App() {
     return (
@@ -26,7 +26,7 @@ function App() {
                         <Route path="/agile-ceremonies" element={<AgileCeremonies />} />
                         <Route path="/user-stories" element={<UserStories />} />
                         <Route path="/github" element={<GitHubRepos />} />
-                        <Route path="/contact" element={<Contact />} />
+                        <Route path="/jobs" element={<JobSearchPage />} />
                     </Routes>
                 </main>
                 <Footer />

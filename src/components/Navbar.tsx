@@ -91,13 +91,13 @@ const Navbar = () => {
                     GitHub
                 </NavLink>
                 <NavLink
-                    to="/contact"
+                    to="/jobs"
                     style={({ isActive }) => ({
                         margin: '0 1rem',
                         fontWeight: isActive ? 'bold' : 'normal',
                     })}
                 >
-                    Contact
+                    Job Search
                 </NavLink>
             </div>
         </nav>

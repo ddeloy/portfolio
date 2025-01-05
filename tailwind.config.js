@@ -2,7 +2,7 @@
 export default {
   content: [
     "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{js,ts,jsx,tsx}", // Includes all relevant project files
   ],
   theme: {
     extend: {
@@ -24,8 +24,24 @@ export default {
         primary: '#1DA1F2', // Example primary color
         secondary: '#14171A', // Example secondary color
         accent: '#FFAD1F', // Accent color
+        success: '#28a745', // Success color for notifications or buttons
+        warning: '#ffc107', // Warning color
+        danger: '#dc3545', // Error or danger color
+      },
+      spacing: {
+        72: '18rem', // Custom spacing utility
+        84: '21rem',
+      },
+      borderRadius: {
+        xl: '1.25rem', // Custom border radius
       },
     },
+    screens: {
+      '2xl': '1440px', // Custom breakpoint for larger screens
+    },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'), // Plugin for blog and rich text
+    require('@tailwindcss/forms'), // Plugin for form elements
+  ],
 };
