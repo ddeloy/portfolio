@@ -42,7 +42,7 @@ const Projects = () => {
         {
             title: "Portfolio Site",
             description: "Authored in a modern, responsive, and dynamic format .",
-            link: "https://ddeloy.com/porfolio",
+            link: "https://ddeloy.com/portfolio",
             category: "REACT",
         },
         {
