@@ -1,32 +1,34 @@
-import { useNavigate } from 'react-router-dom';
+import { useParams } from "react-router-dom";
+import { useEffect, useState } from "react";
+import ReactMarkdown from "react-markdown";
 
-const ArticleDropdown: React.FC = () => {
-    const navigate = useNavigate();
-    const articles = [
-        { title: 'Agile Estimating', path: '/agile-estimating' },
-        { title: 'Ways of Working', path: '/wow' },
-        { title: 'Agile Ceremonies', path: '/agile-ceremonies' },
-        { title: 'User Stories', path: '/user-stories' },
-    ];
+const ArticleComponent: React.FC = () => {
+    const { slug } = useParams<{ slug: string }>();
+    const [content, setContent] = useState<string | null>(null);
 
-    const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-        navigate(event.target.value);
-    };
+    useEffect(() => {
+        const fetchArticle = async () => {
+            try {
+                const response = await fetch(`/articles/${slug}.md`); // Fetch from the static directory
+                if (!response.ok) {
+                    throw new Error("Article not found");
+                }
+                const text = await response.text();
+                setContent(text);
+            } catch (error) {
+                console.error("Error fetching article:", error);
+                setContent("## Article Not Found\nThe requested article does not exist.");
+            }
+        };
+
+        fetchArticle();
+    }, [slug]);
 
     return (
-        <div>
-            <select onChange={handleChange} defaultValue="">
-                <option value="" disabled>
-                    Select an article
-                </option>
-                {articles.map((article) => (
-                    <option key={article.path} value={article.path}>
-                        {article.title}
-                    </option>
-                ))}
-            </select>
+        <div className="prose mx-auto p-4 bg-white rounded-lg shadow-md">
+            <ReactMarkdown>{content || "Loading..."}</ReactMarkdown>
         </div>
     );
 };
 
-export default ArticleDropdown;
+export default ArticleComponent;

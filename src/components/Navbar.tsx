@@ -7,10 +7,10 @@ const Navbar = () => {
     const toggleDropdown = () => setIsDropdownOpen((prev) => !prev);
 
     const articles = [
-        { title: 'Agile Estimating', path: '/agile-estimating' },
-        { title: 'Ways of Working', path: '/wow' },
-        { title: 'Agile Ceremonies', path: '/agile-ceremonies' },
-        { title: 'User Stories', path: '/user-stories' },
+        { title: "Agile Estimating", path: "/articles/agile-estimating" },
+        { title: "Ways of Working", path: "/articles/wow" },
+        { title: "Agile Ceremonies", path: "/articles/agile-ceremonies" },
+        { title: "User Stories", path: "/articles/user-stories" },
     ];
 
     return (

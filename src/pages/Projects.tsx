@@ -5,7 +5,7 @@ const Projects = () => {
         title: "Day Trading App",
         description: "Proprietary day trading app built with TypeScript functional programming.",
         link: "https://ddeloy.com/d-trade/",
-        image: "/images/featured.png", // Optional: Replace with the image path
+        image: "/src/assets/images/featured.png", // Optional: Replace with the image path
     };
 
     const projectData = [
