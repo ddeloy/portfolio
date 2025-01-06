@@ -79,7 +79,11 @@ const JobSearchPage: React.FC = () => {
 
     return (
         <div className="p-4">
-            <h1 className="text-3xl font-bold mb-4">Job Search</h1>
+            <h1 className="text-2xl font-bold mb-3">Job Search App</h1>
+            <p className="text-gray-600 mb-4">
+                Use this tool to track and manage your job applications. You can add new job entries,
+                update details, and save your progress for future reference. See the About page for more information.
+            </p>
             <div className="mb-4">
                 <button
                     className="bg-green-500 text-white px-4 py-2 rounded mr-2"
@@ -116,7 +120,7 @@ const JobSearchPage: React.FC = () => {
                     <th className="p-2 border">Date Applied</th>
                     <th className="p-2 border">Status</th>
                     <th className="p-2 border">Disposition</th>
-                    <th className="p-2 border">Fave</th>
+                    <th className="p-2 border">Favorite</th>
                     <th className="p-2 border">Actions</th>
                 </tr>
                 </thead>

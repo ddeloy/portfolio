@@ -57,7 +57,7 @@
 - Team (or team member) grabs a user story, analyzes and places into an appropriate bucket
 
 
-![image.png](image-buckets.png)
+![image.png](../components/Articles/image-buckets.png)
 
 ### Story Point Range: 1, 2, 3, 5, 8, 13, 21
 Though we could agree upon any alternative sequence that suits us

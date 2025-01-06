@@ -1,11 +1,12 @@
 import ProjectCard from "../components/ProjectCard";
+import featuredImage from "./featured.png"; // Import the featured image
 
 const Projects = () => {
     const featuredProject = {
         title: "Day Trading App",
         description: "Proprietary day trading app built with TypeScript functional programming.",
         link: "https://ddeloy.com/d-trade/",
-        image: "/src/assets/images/featured.png", // Optional: Replace with the image path
+        image: featuredImage, // Use the imported image
     };
 
     const projectData = [
@@ -41,7 +42,7 @@ const Projects = () => {
         },
         {
             title: "Portfolio Site",
-            description: "Authored in a modern, responsive, and dynamic format .",
+            description: "Authored in a modern, responsive, and dynamic format.",
             link: "https://ddeloy.com/portfolio",
             category: "REACT",
         },

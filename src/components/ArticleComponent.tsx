@@ -1,32 +1,32 @@
-import { useParams } from "react-router-dom";
-import { useEffect, useState } from "react";
-import ReactMarkdown from "react-markdown";
+import React from "react";
+import AgileCeremonies from "./Articles/AgileCeremonies";
+import AgileEstimating from "./Articles/AgileEstimating";
+import UserStories from "./Articles/UserStories";
+import WaysOfWorking from "./Articles/WaysOfWorking";
 
 const ArticleComponent: React.FC = () => {
-    const { slug } = useParams<{ slug: string }>();
-    const [content, setContent] = useState<string | null>(null);
+    // Define article components
+    const articles: Record<string, JSX.Element> = {
+        "agile-ceremonies": <AgileCeremonies />,
+        "agile-estimating": <AgileEstimating />,
+        "user-stories": <UserStories />,
+        "ways-of-working": <WaysOfWorking />,
+    };
 
-    useEffect(() => {
-        const fetchArticle = async () => {
-            try {
-                const response = await fetch(`/articles/${slug}.md`); // Fetch from the static directory
-                if (!response.ok) {
-                    throw new Error("Article not found");
-                }
-                const text = await response.text();
-                setContent(text);
-            } catch (error) {
-                console.error("Error fetching article:", error);
-                setContent("## Article Not Found\nThe requested article does not exist.");
-            }
-        };
+    // Get the current article key from URL parameters
+    const urlPath = window.location.hash.split("/").pop()?.toLowerCase() || "";
 
-        fetchArticle();
-    }, [slug]);
+    // Check if the article exists
+    const articleComponent = articles[urlPath];
 
     return (
         <div className="prose mx-auto p-4 bg-white rounded-lg shadow-md">
-            <ReactMarkdown>{content || "Loading..."}</ReactMarkdown>
+            {articleComponent || (
+                <div>
+                    <h1 className="text-2xl font-bold">Article Not Found</h1>
+                    <p>The requested article does not exist or has been removed.</p>
+                </div>
+            )}
         </div>
     );
 };

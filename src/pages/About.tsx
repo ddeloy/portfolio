@@ -21,19 +21,19 @@ const About = () => {
             <h2 className="text-2xl font-semibold text-gray-800 mb-3">Page Features</h2>
             <ul className="list-disc list-inside text-gray-600 space-y-4">
                 <li>
-                    <strong>Projects:</strong>
+                    <strong>Projects: </strong>
                     A section dedicated to showcasing links to my past projects and apps. This is where I highlight my work, including live demos and repository links, giving visitors an insight into my technical capabilities.
                 </li>
                 <li>
-                    <strong>Agile Articles ▼:</strong>
-                    A dropdown menu that features project management articles I’ve authored, presented as markdown files. These articles cover best practices, methodologies, and lessons learned from my experiences.
+                    <strong>Agile Articles ▼: </strong>
+                    A custom dropdown menu component - features a few sample articles I authored while overseeing the development of an AI auditing app for Big 5 Accounting firm PwC (H2O.ai client). These articles cover best practices, methodologies, and lessons learned from my experiences.
                 </li>
                 <li>
-                    <strong>GitHub Integration:</strong>
+                    <strong>GitHub Integration: </strong>
                     Links to and dynamically fetches a sampling of my public repositories using the GitHub API. This demonstrates my proficiency in code sharing and collaboration.
                 </li>
                 <li>
-                    <strong>Job Search:</strong>
+                    <strong>Job Search: </strong>
                     A section designed to help manage job search efforts with basic CRUD functionality. This page showcases key development features such as dropdown menus and dynamic interactions, all locally stored for quick access.
                 </li>
             </ul>
