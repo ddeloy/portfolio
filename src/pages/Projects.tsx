@@ -25,7 +25,7 @@ const Projects = () => {
         {
             title: "TODO App",
             description: "A simple TODO list app showcasing CRUD operations in TypeScript.",
-            link: "https://example.com/todo-app",
+            link: "https://ddeloy.com/ts-todos/",
             category: "TypeScript",
         },
         {
