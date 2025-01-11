@@ -23,6 +23,12 @@ const Projects = () => {
             category: "Angular",
         },
         {
+            title: "SPA Framework",
+            description: "Old AngularJS Single Page Application",
+            link: "https://ddeloy.com/angular-spa-framework",
+            category: "Angular",
+        },
+        {
             title: "TODO App",
             description: "A simple TODO list app showcasing CRUD operations in TypeScript.",
             link: "https://ddeloy.com/ts-todos/",

@@ -12,7 +12,7 @@ const GitHubRepos = () => {
     const [loading, setLoading] = useState(true);
 
     // List of repositories to fetch
-    const repoNames = useMemo(() => ['d-trade', 'portfolio'], []); // Adjust repo names as needed
+    const repoNames = useMemo(() => ['analytic', 'angular-dashboard-framework','d-trade', 'global-qa', 'itn-md-library', 'npm-seed','portfolio'], []); // Adjust repo names as needed
 
     useEffect(() => {
         const fetchRepoByName = async (repoName: string): Promise<Repo | null> => {
@@ -56,7 +56,7 @@ const GitHubRepos = () => {
 
     return (
         <div className="p-4 space-x-2">
-            <h1 className="text-2xl font-bold mb-3">Fetching a few of my most current GitHub Repos</h1>
+            <h1 className="text-2xl font-bold mb-3">Fetching several public GitHub Repos</h1>
             <ul className="list-disc space-y-2">
                 {repos.map((repo) => (
                     <li key={repo.id}>
