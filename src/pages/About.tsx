@@ -32,10 +32,10 @@ const About = () => {
                     <strong>GitHub Integration: </strong>
                     Links to and dynamically fetches a sampling of my public repositories using the GitHub API. This demonstrates my proficiency in code sharing and collaboration.
                 </li>
-                <li>
+               {/* <li>
                     <strong>Job Search: </strong>
                     A section designed to help manage job search efforts with basic CRUD functionality. This page showcases key development features such as dropdown menus and dynamic interactions, all locally stored for quick access.
-                </li>
+                </li>*/}
             </ul>
         </div>
     );

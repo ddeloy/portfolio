@@ -90,7 +90,7 @@ const Navbar = () => {
                 >
                     GitHub
                 </NavLink>
-                <NavLink
+            {/*    <NavLink
                     to="/jobs"
                     style={({ isActive }) => ({
                         margin: '0 1rem',
@@ -98,7 +98,7 @@ const Navbar = () => {
                     })}
                 >
                     Job Search
-                </NavLink>
+                </NavLink>*/}
                 <NavLink
                     to="/about"
                     style={({ isActive }) => ({

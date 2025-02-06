@@ -58,6 +58,13 @@ const Projects = () => {
             link: "https://ddeloy.com/KnowledgeBuild/preview.php",
             category: "PHP/MySQL",
         },
+
+        {
+            title: "d3.js custom plot",
+            description: "Visualization of domestic energy consumption",
+            link: "https://ddeloy.com/energy-usage/",
+            category: "Data Visualization",
+        },
     ];
 
     return (
