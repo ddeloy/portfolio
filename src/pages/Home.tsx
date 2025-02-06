@@ -11,23 +11,48 @@ const Home = () => {
             <div className="mt-8 text-left mx-auto max-w-3xl">
                 <h2 className="text-2xl font-semibold mb-4 text-gray-800">About Me</h2>
                 <p className="text-lg text-gray-700 mb-6">
-                    20+ years of web and web application development experience and a very diverse, unique set of skills.
+                    Proven Senior Software Engineer with 20+ years of experience designing and developing web
+                    applications.
+                    Deep expertise in frontend engineering, UI/UX, release management, and modern JavaScript frameworks.
                 </p>
 
-                <h2 className="text-2xl font-semibold mb-4 text-gray-800">Frontend Development</h2>
+                <h2 className="text-2xl font-semibold mb-4 text-gray-800">Frontend Development & UI/UX</h2>
                 <p className="text-lg text-gray-700 mb-6">
-                    Focus on the user interface and typically work with JavaScript, TypeScript, Angular, REACT, Vue, CSS/SAAS.
+                    Specializing in JavaScript, TypeScript, Angular, React, Vue, CSS (Sass/SCSS), and modern responsive
+                    web design principles.
+                    Focused on building scalable, performant, and maintainable UI architectures.
+
                 </p>
 
-                <h2 className="text-2xl font-semibold mb-4 text-gray-800">Project and Program Management</h2>
+                <h2 className="text-2xl font-semibold mb-4 text-gray-800">Release Management & QA</h2>
                 <p className="text-lg text-gray-700 mb-6">
-                    Oversee enterprise application development and facilitate collaboration across remote, geographically distributed teams: Azure DevOps (ADO); Agile methodologies (including Scaled Agile—SAFe®).
+                    Extensive experience leading automated and manual integration testing to certify AI/machine learning
+                    platform releases across AWS, Azure, and GCP. Skilled in CI/CD pipeline management,
+                    infrastructure as code (Terraform, Helm), and test automation to ensure seamless deployment and high
+                    software reliability.
                 </p>
 
-                <h2 className="text-2xl font-semibold mb-4 text-gray-800">Release Management / QA</h2>
+                <h2 className="text-2xl font-semibold mb-4 text-gray-800">Project & Program Leadership</h2>
                 <p className="text-lg text-gray-700 mb-6">
-                    Lead automated and manual integration testing – certify deployment of AI/machine learning platform releases across various clouds (AWS, Azure, GCP).
+                    Experienced in leading cross-functional, distributed teams and managing enterprise application
+                    development. Skilled in Agile methodologies (Scrum, Scaled Agile—SAFe®),
+                    Azure DevOps (ADO), and collaborative development processes.
                 </p>
+
+                <h2 className="text-2xl font-semibold mb-4 text-gray-800">Cloud & DevOps Integration</h2>
+                <p className="text-lg text-gray-700 mb-6">
+                    Expertise in deploying AI/machine learning platforms across AWS, Azure, and GCP, with hands-on
+                    experience in CI/CD pipelines,
+                    automated testing, Terraform, and Helm.
+
+                </p>
+
+                <h2 className="text-2xl font-semibold mb-4 text-gray-800">Cross-Disciplinary Technical Experience</h2>
+                <p className="text-lg text-gray-700 mb-6">
+                    While primarily focused on frontend development, familiar with backend integration, working with Java, PHP, MySQL/Postgres,
+                    and APIs to support complex web applications.
+                </p>
+
             </div>
         </div>
     );

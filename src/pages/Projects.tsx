@@ -18,7 +18,7 @@ const Projects = () => {
         },
         {
             title: "Hacker News PWA",
-            description: "Progressive Web App built with Angular CLI, RxJS, and Webpack.",
+            description: "Progressive Web App built with Angular CLI, RxJS, and Webpack (from desktop - Safari works best).",
             link: "https://ddeloy.com/progressive-angular-dist-4/#/newest/1",
             category: "Angular",
         },
@@ -46,12 +46,12 @@ const Projects = () => {
             link: "https://ddeloy.com/vue/",
             category: "VUE",
         },
-        {
+        /*{
             title: "Portfolio Site",
             description: "Authored in a modern, responsive, and dynamic format.",
             link: "https://ddeloy.com/portfolio",
             category: "REACT",
-        },
+        },*/
         {
             title: "Knowledge Base",
             description: "A knowledge base built in PHP/MySQL with database storage.",
