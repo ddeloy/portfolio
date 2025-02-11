@@ -4,7 +4,7 @@ import featuredImage from "./featured.png"; // Import the featured image
 const Projects = () => {
     const featuredProject = {
         title: "Day Trading App",
-        description: "Proprietary day trading app built with TypeScript functional programming.",
+        description: "Proprietary day trading app built with TypeScript functional programming",
         link: "https://ddeloy.com/d-trade/",
         image: featuredImage, // Use the imported image
     };
@@ -17,48 +17,53 @@ const Projects = () => {
             category: "Angular",
         },
         {
-            title: "Hacker News PWA",
-            description: "Progressive Web App built with Angular CLI, RxJS, and Webpack (from desktop - Safari works best).",
-            link: "https://ddeloy.com/progressive-angular-dist-4/#/newest/1",
+            title: "Angular MVP",
+            description: "Angular 19 rewrite of TypeScript day trading app",
+            link: "https://ddeloy.com/angular-mvp/",
             category: "Angular",
         },
         {
             title: "SPA Framework",
-            description: "Old AngularJS Single Page Application",
+            description: "AngularJS Dashboard",
             link: "https://ddeloy.com/angular-spa-framework",
             category: "Angular",
         },
         {
+            title: "Hacker News PWA",
+            description: "Progressive Web App built with Angular CLI, RxJS, and Webpack (from desktop - Safari works best)",
+            link: "https://ddeloy.com/progressive-angular-dist-4/#/newest/1",
+            category: "Angular",
+        },
+        {
+            title: "Change Track",
+            description: "Change Order Management",
+            link: "https://ddeloy.com/change-track",
+            category: "REACT",
+        },
+        {
             title: "TODO App",
-            description: "A simple TODO list app showcasing CRUD operations in TypeScript.",
+            description: "Simple TODO list showcasing CRUD operations in TypeScript",
             link: "https://ddeloy.com/ts-todos/",
             category: "TypeScript",
         },
         {
             title: "Functional Data Processing",
-            description: "A tool to build, transform, and filter data purely functionally.",
+            description: "A tool to build, transform, and filter data purely functionally",
             link: "https://ddeloy.com/data-processing/",
             category: "TypeScript",
         },
         {
             title: "Dashboard Template",
-            description: "A Skeletal, modular and extensible template using JavaScript.",
+            description: "A Skeletal, modular and extensible template using JavaScript",
             link: "https://ddeloy.com/vue/",
             category: "VUE",
         },
-        /*{
-            title: "Portfolio Site",
-            description: "Authored in a modern, responsive, and dynamic format.",
-            link: "https://ddeloy.com/portfolio",
-            category: "REACT",
-        },*/
         {
             title: "Knowledge Base",
-            description: "A knowledge base built in PHP/MySQL with database storage.",
+            description: "A knowledge base built in PHP/MySQL with database storage",
             link: "https://ddeloy.com/KnowledgeBuild/preview.php",
             category: "PHP/MySQL",
         },
-
         {
             title: "d3.js custom plot",
             description: "Visualization of domestic energy consumption",
