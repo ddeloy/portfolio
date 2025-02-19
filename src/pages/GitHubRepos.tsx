@@ -12,7 +12,7 @@ const GitHubRepos = () => {
     const [loading, setLoading] = useState(true);
 
     // List of repositories to fetch
-    const repoNames = useMemo(() => ['analytic', 'angular-dashboard-framework', 'angular-mvp', 'd-trade', 'global-qa', 'itn-md-library', 'npm-seed','portfolio'], []); // Adjust repo names as needed
+    const repoNames = useMemo(() => ['analytic', 'angular-dashboard-framework', 'angular-mvp', 'change-track','d-trade', 'global-qa', 'itn-md-library', 'npm-seed','portfolio'], []); // Adjust repo names as needed
 
     useEffect(() => {
         const fetchRepoByName = async (repoName: string): Promise<Repo | null> => {
