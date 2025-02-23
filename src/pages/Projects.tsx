@@ -53,6 +53,18 @@ const Projects = () => {
             category: "TypeScript",
         },
         {
+            title: "Simple MFE Dashboard",
+            description: "Simple Micro-Frontend (MFE) architecture example using Webpack Module Federation",
+            link: "https://mfe-dashboard-murex.vercel.app/",
+            category: "Microservices",
+        },
+        {
+            title: "Trading Dashboard - Standalone MFE" ,
+            description: "A self-contained stock market analysis tool, fetching real-time data from Alpha Vantage API.",
+            link: "https://mfe-dashboard-5puy.vercel.app/",
+            category: "Microservices",
+        },
+        {
             title: "Dashboard Template",
             description: "A Skeletal, modular and extensible template using JavaScript",
             link: "https://ddeloy.com/vue/",
